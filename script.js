@@ -61,11 +61,11 @@ while (non !== total){	//creates the divs with the "grid-item" class
 }
 
 function HO(){
-	if(window.innerWidth < 600){
-		grix = 11
-		grid = 21
-	}
-	else if(window.innerWidth > 600){
+	//if(window.innerWidth < 600){	//	TODO
+		//grix = 11
+		//grid = 21
+	//}
+	/*else*/if(window.innerWidth > 600){
 		gridx = 54
 		gridy = 26
 	}
