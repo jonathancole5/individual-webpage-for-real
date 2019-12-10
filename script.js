@@ -9,9 +9,9 @@ var raudio
 var rfunc
 var rimage
 var rdir
-var gridx
-var gridy
-document.onload = HO()
+var gridx = 54
+var gridy = 26
+//document.onload = HO()  //W.I.P
 var bigbee = 0
 var total = gridx * gridy
 var frickrear = total - gridx;
@@ -50,7 +50,7 @@ while (non !== total){	//creates the divs with the "grid-item" class
 	
 	if (non < total){
 		hehe.appendChild(g);
-		//b[non].innerHTML = non;
+		//b[non].innerHTML = non; //Use this in case you need to visualise the number of a "grid-item"
 		non++
 	}
 	
@@ -60,16 +60,17 @@ while (non !== total){	//creates the divs with the "grid-item" class
 	}
 }
 
-function HO(){
-	//if(window.innerWidth < 600){	//	TODO
-		//grix = 11
-		//grid = 21
-	//}
-	/*else*/if(window.innerWidth > 600){
+/*function HO(){
+	if(window.innerWidth < 600){	//TODO
+		grix = 11
+		grid = 21
+	}
+	else if(window.innerWidth > 600){
 		gridx = 54
 		gridy = 26
 	}
-}
+}*/
+
 console.log(b.length, "Grid items");	//Prints the number of elements with "grid-item" class to the browser console
 
 function boy(){
